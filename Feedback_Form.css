@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum+Gothic', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./Images/Ada1BG.png') no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.feedback h2 {  /* name of section class */
+    font-size: 40px;
+    color: #fbf7f5;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 0 25px #b9b4ab;
+}
+
+.feedback form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid linear-gradient;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    margin: 12px 0;
+    backdrop-filter: blur(25px);
+}
+
+.field .item::placeholder {
+    color: white;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px;
+}
+
+
+form button {
+    padding: 12px 32px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #fbf9f6; /*This is for button glow*/
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+.field .error-text {
+    font-size: 16px;
+    text-shadow: 0 0 10px #940000; /*This is for text glow*/
+    color: pink;
+    text-decoration: underline;
+    text-align: right;
+    margin: -5px 0 10px;
+    display: none;
+    backdrop-filter: blur(2px);
+    background: linear-gradient(transparent, rgba(0,0,0,0.05))
+}
+
+.field.error .item {
+    border-color: red;
+}
+
+.field.error .error-text {
+    display: block;
+}

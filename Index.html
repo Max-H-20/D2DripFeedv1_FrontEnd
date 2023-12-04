@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> D2DripFeedv1 - FrontEnd</title>
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar Section-->
+    <nav>        
+    <div class="container">
+        <h2 class="logo">
+          D2DripFeed
+        </h2>  
+        <div class="Feedback">
+          <a href="Feedback_Form.html" class="btn btn-primary">Feedback(Open)</a>
+        </div>
+        <div class="Login-Register">
+          <a href="login_register.html" class="btn btn-primary">Login/Register</a>
+        </div>
+        <div class="search-bar">
+          <span class="material-icons-outlined">search</span>
+          <input type="search" placeholder="Search for Your Fellow Guardians">
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-picture">
+              <img src="./Images/Profile-Picture1.jpg">
+          </div>
+        </div>
+    </div>
+    </nav>
+
+    <!--Main Posts Section-->
+    <main>
+        <div class="container">
+
+            <div class="left-side">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="./Images/Profile-Picture1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4> Max </h4>
+                        <p class="text-muted">
+                            @Max
+                        </p>
+                    </div>
+                </a>
+                <!--Sidebar-->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span class="material-icons-outlined">cottage    
+                        </span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span class="material-icons-outlined">manage_search
+                            </span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifs">
+                        <span class="material-icons-outlined">notifications</span><small class="notif-count">4</small></span><h3>Notifications</h3>
+                        <!--Notifs Popup-->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./Images/ShinMalphur_pfp.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Shin Malphur</b> accepted your friend request<small class="text-muted"> 5 Minutes Ago</small>
+                                </div>
+                                <div class="profile-picture">
+                                    <img src="./Images/Zavala_pfp.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Zavala</b> accepted your friend request<small class="text-muted"> 3 Days Ago</small>
+                                </div>
+                                <div class="profile-picture">
+                                    <img src="./Images/AnaBray_pfp.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ana Bray</b> accepted your friend request<small class="text-muted"> 10 Days Ago</small>
+                                </div>
+                                <div class="profile-picture">
+                                    <img src="./Images/IkoraRey_pfp.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ikora Rey</b> accepted your friend request<small class="text-muted"> 11 Days Ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of Notifs Popup for now-->
+                    </a>
+                    <a class="menu-item" id="message-notifs">
+                        <span class="material-icons-outlined">forum</span><small class="notif-count">3</small></span><h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span class="material-icons-outlined">bookmarks
+                            </span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span class="material-icons-outlined">palette
+                            </span><h3>Theme</h3>
+                    </a>
+                </div>
+                <!--End of SideBar-->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+
+            <div class="middle">
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="./Images/Profile-Picture1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind Guardian?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!--Your Feed-->
+                <div class="feed">
+                    <!--Feed Post 1-->
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./Images/easy_pfp.png">
+                                </div>
+                                <div class="info">
+                                    <h3> FreakyRican </h3>
+                                    <small>The Tower, 5 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                            <div class="drip_photo">
+                            <img src="./Images/EasyTitan.JPG">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-icons-outlined">favorite_border
+                                </span>
+                                <span class="material-icons-outlined">chat_bubble
+                                </span>
+                                <span class="material-icons-outlined">share
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span class="material-icons-outlined">bookmark_border
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./Images/trey_pfp.jpg"></span>
+                            <span> <img src="./Images/sayful_pfp.png"></span>
+                            <p> Liked by <b>Trey, Sayful</b> and <b>1,580 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>FreakyRican</b> This that fire fr fr <span class="hashtag">#Titan</span></p>
+                        </div>
+                        <div class="comments text-muted"> View all 5 comments</div>
+                    </div>
+                    <!--End of Feed Post 1-->
+                    <!-- Feed Post 2-->
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./Images/trey_pfp.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Trey </h3>
+                                    <small>Europa, 46 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                            <div class="drip_photo">
+                            <img src="./Images/DeepStoneHunter.JPG">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-icons-outlined">favorite_border
+                                </span>
+                                <span class="material-icons-outlined">chat_bubble
+                                </span>
+                                <span class="material-icons-outlined">share
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span class="material-icons-outlined">bookmark_border
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./Images/easy_pfp.png"></span>
+                            <span> <img src="./Images/sayful_pfp.png"></span>
+                            <p> Liked by <b>FreakyRican, Sayful</b> and <b>1,983 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Trey</b> Deep Stone haul <span class="hashtag">#Hunter</span></p>
+                        </div>
+                        <div class="comments text-muted"> View all 11 comments</div>
+                    </div>
+                    <!--End of Feed Post 2-->
+                    <!--Feed Post 3-->
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./Images/sayful_pfp.png">
+                                </div>
+                                <div class="info">
+                                    <h3> Sayful </h3>
+                                    <small>The Tower, 52 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                            <div class="drip_photo">
+                            <img src="./Images/WhiteDevilHunter.JPG">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-icons-outlined">favorite_border
+                                </span>
+                                <span class="material-icons-outlined">chat_bubble
+                                </span>
+                                <span class="material-icons-outlined">share
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span class="material-icons-outlined">bookmark_border
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./Images/trey_pfp.jpg"></span>
+                            <span> <img src="./Images/AnaBray_pfp.png"></span>
+                            <p> Liked by <b>Trey, Ana Bray</b> and <b>729 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Sayful</b> Luh calm fit <span class="hashtag">#Hunter</span></p>
+                        </div>
+                        <div class="comments text-muted"> View all 6 comments</div>
+                    </div>
+                    <!--End of Feed Post 3-->
+                    <!--Feed Post 4-->
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./Images/Profile-Picture1.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Max </h3>
+                                    <small>New York, 2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                            <div class="drip_photo">
+                            <img src="./Images/MyWarlock.JPG">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-icons-outlined">favorite_border
+                                </span>
+                                <span class="material-icons-outlined">chat_bubble
+                                </span>
+                                <span class="material-icons-outlined">share
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span class="material-icons-outlined">bookmark_border
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./Images/nas_pfp.jpg"></span>
+                            <span> <img src="./Images/Zavala_pfp.png"></span>
+                            <p> Liked by <b>Nas, Zavala</b> and <b>2,047 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Max</b> Waiting for the DLC has me in shambles omfg <span class="hashtag">#Warlock</span></p>
+                        </div>
+                        <div class="comments text-muted"> View all 12 comments</div>
+                    </div>
+                    <!--End of Feed Post 4-->
+                    <!--Feed Post 5-->
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./Images/nas_pfp.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Nas </h3>
+                                    <small>The Bronx, 3 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                            <div class="drip_photo">
+                            <img src="./Images/Evil_Warlock.JPG">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span class="material-icons-outlined">favorite_border
+                                </span>
+                                <span class="material-icons-outlined">chat_bubble
+                                </span>
+                                <span class="material-icons-outlined">share
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span class="material-icons-outlined">bookmark_border
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./Images/sayful_pfp.png"></span>
+                            <span> <img src="./Images/trey_pfp.jpg"></span>
+                            <p> Liked by <b>Sayful, Trey</b> and <b>1,342 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Nas</b> If you not OP then what are you? <span class="hashtag">#Warlock</span></p>
+                        </div>
+                        <div class="comments text-muted"> View all 9 comments</div>
+                    </div>
+                    <!--End of Feed Post 5-->
+                </div>
+                <!--End of Feed In General-->
+            </div>
+
+            <!--Right Side Start -->
+            <div class="right-side">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Your Messages</h4><span class="material-icons-outlined">edit</span>
+                    </div>
+                    <!--Search Bar-->
+                    <div class="search-bar">
+                        <span class="material-icons-outlined">search</span>
+                        <input type="search" placeholder="Search your messages" id="message-search">
+                    </div>
+                    <!--Messages Section-->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(2)</h6>
+                    </div>
+                    <!--Message-->
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./Images/Zavala_pfp.png">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Zavala</h5>
+                            <p class="text-muted">Indeed.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./Images/trey_pfp.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Trey</h5>
+                            <p class="text-muted">Watch yo next step</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./Images/easy_pfp.png">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>FreakyRican</h5>
+                            <p class="text-muted">Yeah I know.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./Images/nas_pfp.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Nas</h5>
+                            <p class="text-muted">Pain</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./Images/sayful_pfp.png">
+                        </div>
+                        <div class="message-body">
+                            <h5>Sayful</h5>
+                            <p class="text-muted">AAAHHHHHHH</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of messages-->
+
+                <!--Friend Requests-->
+                <div class="friend-requests">
+                    <h4>Friend Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./Images/saint14_pfp.png">
+                            </div>
+                            <div>
+                                <h5>Saint-14</h5>
+                                <p class="text-muted">
+                                    5 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./Images/miru_pfp.png">
+                            </div>
+                            <div>
+                                <h5>Miru</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Themes-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2> Customize your Drip Feed!</h2>
+            <p class="text-muted">Manage the font size, color, and background here.</p>
+            <!--Font Size-->
+            <div class="font-size">
+                <h4>Font Sizes</h4>
+                <div>
+                    <h6>Aa</h6>
+                <div class="choose-font-size">
+                    <span class="font-size-1"></span>
+                    <span class="font-size-2 active"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+                </div>
+            </div>
+            <!--Site Colors-->
+            <div class="colors">
+                <h4>Colors</h4>
+                <div class="choose-colors">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                    <span class="color-6"></span>
+                </div>
+            </div>
+            <!--Background Themes-->
+            <div class="background-theme">
+                <h4>Site-Theme</h4>
+                <div class="choose-theme">
+                    <div class="theme-1 active">
+                        <span></span>
+                        <h5 for="theme-1">Light</h5>
+                    </div>
+                    <div class="theme-2">
+                        <span></span>
+                        <h5 for="theme-2">Dim</h5>
+                    </div>
+                    <div class="theme-3">
+                        <span></span>
+                        <h5 for="theme-3">Night</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script type="module"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Login/Register </title>
+    <link rel="stylesheet" href="login_register.css">
+</head>
+<body>
+    <header>
+        <h2 class="Logo">D2DripFeed</h2> <!--Title of Page-->
+        <nav class="navigation">
+            <a href="Index.html">Back to Main Page</a> <!--Links So Far-->
+            <a href="FeedBack_Form.html">Contact Me via Feedback (Now Open)</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email"required>
+                    <label> Email: </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password"required>
+                    <label> Password: </label>
+                </div>
+                <button type="submit" class="btn">login</button>
+                <div class="login-register">
+                    <p> Don't have an account? <a href="#" class="register-link"> Register </a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" name="username" id="username" required/>
+                    <label> Username: </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" name="email" placeholder="email" required />
+                    <label> Email: </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" name="password" id="password" required />
+                    <label> Password: </label>
+                </div>
+                <button type="submit" id="signUp" value="Sign Up" class="btn"> register </button>
+                <div class="terms-and-conditions">
+                    <label><input type="checkbox">
+                        I agree to the terms/conditions
+                    </label>
+                </div>
+                <div class="login-register">
+                    <p> Already have an account? <a href="#" class="login-link"> Login </a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login_register.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module">
+</script>
+</body>
+</html>

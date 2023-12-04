@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working_Feedback_Form </title>
+    <link rel="stylesheet" href="Feedback_Form.css">
+    </head>
+
+<body>
+    <section class="feedback">
+        <h2> Provide Feedback Here! </h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-text"> Your full name can't be blank! </div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+                    <div class="error-text email"> Your email can't be blank! </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-text"> The subject of this feedback post can't be blank! </div>
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" ></textarea>
+                <div class="error-text"> The message can't be blank! </div>
+            </div>
+            <button type="submit"> Send Message </button>
+            <button type="button" onclick="document.location='index.html' " id="BackHome" class="BackHome">Back to Home</button>
+        </form>
+    </section>
+
+    <script src="Feedback_Form.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+</html>
